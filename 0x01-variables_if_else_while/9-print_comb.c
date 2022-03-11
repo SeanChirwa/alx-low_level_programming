@@ -10,16 +10,17 @@
 
 int main(void)
 {
-	int i;
+	int k;
 
-	for (i = 48; i < 58; i++)
+	for (k = 48; k <= 57; k++)
 	{
-		putchar(i);
-		putchar(',');
-		putchar(' ');
+		putchar(k);
+		if (k < 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
